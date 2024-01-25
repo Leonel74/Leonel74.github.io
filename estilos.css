@@ -5,17 +5,17 @@ body{
 header{
     display: flex;
     height: 65px;
-    background: linear-gradient(to right, #3F259F, #fff);
-    color: white;
+    background: linear-gradient(to right, #3F259F, #1e654a);
+    color: rgb(70, 14, 14);
     align-items: center;
     padding-left: 25px;
-    border-bottom: 3px solid #CDCAD8;
+    border-bottom: 3px solid #B8A869;
 }
 
 .cara{
     border-radius: 500px;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
 }
 .uno{
     width: 100%;
@@ -23,7 +23,7 @@ header{
     flex-direction: row;
     justify-content: center;
     height: calc(100vh - 65px);
-    background-color: #303030;
+    background-color: #B8A869	;
     color: white;
     /* padding-top: 10%; */
 }
@@ -41,14 +41,14 @@ header{
     justify-content: center;
     align-items: center;
     width: 30%;
-    background-color: #424242;
+    background-color: #B8A869;
 }
 .caja-presentacion{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 70%;
-   background: linear-gradient(to right, #F2F2aa, #F2F2ff);
+   background: linear-gradient(to right, #B8A869, #F2F2ff);
     color: #303030;
     padding: 2px;
 }
@@ -78,8 +78,8 @@ header{
 }
 
 .tres{
-    background-color: #303030;
-    height: 600px;
+    background-color: #B8A869;
+    height: 100%;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -89,17 +89,25 @@ header{
 .proyectos{
     width: 80%;
     display: flex;
+    flex-wrap: wrap;
     column-gap: 20px;
     justify-content: space-evenly;
 }
+.proyectos .card{
+    width: calc(33.33% - 10px); /* 33.33% para 3 imágenes por fila, -10px para el espacio entre imágenes */
+    margin: 5px; /* Espacio entre imágenes */
+    box-sizing: border-box; /* Incluye el padding y el borde en el cálculo del ancho */
+
+}
 .proyecto-titulo{
-    width: 100%;
+    width: 100%;  
     background: linear-gradient(to right, #303030, #303aaa);
     text-align: center;
 }
 .card{
-    text-align: center;
-    width: 30%;
+    
+   text-align: center;
+   /* width: 30%;*/
     border: solid #F2F2F2 1px;
     border-radius: 10px;
     padding-bottom: 2px;
