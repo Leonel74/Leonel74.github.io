@@ -1,0 +1,22 @@
+
+
+.contenedor-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    background-color: #160303;
+    
+}
+.mi-imagen{
+
+    object-fit: fill;
+    flex: 1; /* Establece el crecimiento flexible, sin reducción y tamaño inicial automático */
+    height:400px ;
+
+    min-height: 300px; /* Limita el ancho de la imagen al 100% del contenedor */
+    min-width: 300px;
+    max-width: 600px; /* Limita el ancho de la imagen al 100% del contenedor */
+    max-height: 600px;
+    margin: 10px; /* Margen entre imágenes */
+}
